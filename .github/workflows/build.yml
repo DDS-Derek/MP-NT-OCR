@@ -1,4 +1,4 @@
-name: Build NAStoolOCR Image
+name: Build
 on:
   workflow_dispatch:
   push:
@@ -42,4 +42,4 @@ jobs:
             linux/amd64
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/moviepilot-ocr:latest
+            ${{ secrets.DOCKER_USERNAME }}/mp-nt-ocr:latest
